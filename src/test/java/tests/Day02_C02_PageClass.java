@@ -7,7 +7,6 @@ import org.testng.annotations.Test;
 import pages.SauceDemoHomePage;
 import pages.SauceDemoLoginPage;
 import utilities.Driver;
-
 public class Day02_C02_PageClass {
     @Test
     public void pageClasstest() {
@@ -25,6 +24,5 @@ public class Day02_C02_PageClass {
         select.selectByValue("lohi");
         Assert.assertTrue(select.getFirstSelectedOption().getText().contains("low to high"));
         homePage.products.forEach(x-> System.out.println(x.getText()));
-
     }
 }
