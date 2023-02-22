@@ -5,9 +5,7 @@ import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
-
 import java.util.List;
-
 public class SauceDemoLoginPage {
     //initElements methodu Page Class'ı initialize etmek adına kullanılır
     public SauceDemoLoginPage(){
@@ -21,9 +19,7 @@ public class SauceDemoLoginPage {
     public WebElement txtPasswrod;
     @FindBy(xpath="//*[@id='login-button]")
     public WebElement btnLogin;
-
     //Örnek olması açısından @FindAll anotatin kullanımı. Page classtan bağımsızdır
-
     @FindAll(
             {
                     @FindBy(id = "user-name"),

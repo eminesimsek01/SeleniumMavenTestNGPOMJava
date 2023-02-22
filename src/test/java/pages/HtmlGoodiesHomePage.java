@@ -4,7 +4,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
-
 public class HtmlGoodiesHomePage {
     /*
     Go to URL : http://www.dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html
@@ -13,13 +12,11 @@ public class HtmlGoodiesHomePage {
     Demo 2: Drag and drop
     A library of DHTML and Ajax scripts
      */
-
     public HtmlGoodiesHomePage() {
         PageFactory.initElements(Driver.getDriver(),this);
     }
     @FindBy(id="box3")
     public WebElement washington;
-
     @FindBy(id="box4")
     public WebElement copenhag;
     @FindBy(id="box5")
@@ -30,25 +27,18 @@ public class HtmlGoodiesHomePage {
     public WebElement madrid;
     @FindBy(id="box2")
     public WebElement stockholm;
-
     @FindBy(id = "box106")
     public WebElement italy;
-
     @FindBy(id = "box107")
     public WebElement spain;
-
     @FindBy(id = "box101")
     public WebElement norway;
-
     @FindBy(id = "box104")
     public WebElement denmark;
-
     @FindBy(id = "box105")
     public WebElement sKorea;
-
     @FindBy(id = "box102")
     public WebElement sweden;
-
     @FindBy(id = "box103")
     public WebElement us;
 }
